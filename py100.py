@@ -127,4 +127,68 @@ for i in range(len(grocery_list)):
     print(grocery_list.pop(0))
     print(i)
 
-print(grocery_list)
+#print(grocery_list)
+
+#Dictionary exercises -----------------------------------------------
+
+
+car = {
+    'type':    'sedan',
+    'color':   'blue',
+    'mileage': 80_000,
+}
+
+car['year']= 2003
+
+car = {
+    'type':    'sedan',
+    'color':   'blue',
+    'mileage': 80_000,
+    'year':    2003,
+}
+
+car.pop('mileage')
+
+vehicle = {
+    'car': {
+        'type': 'sedan',
+        'color': 'blue',
+        'year': 2003,
+    },
+    'truck': {
+        'type': 'pickup',
+        'color': 'red',
+        'year': 1998,
+    },
+
+}
+
+numbers = {
+    'high':   100,
+    'medium': 50,
+    'low':    25,
+}
+
+half_numbers = []
+
+for num in numbers.values():
+    half_numbers.append(num // 2)
+
+#print(half_numbers)
+
+half_numbers = [(value // 2) for value in numbers.values()]  ## using list comprehension
+
+
+#print(half_numbers)
+
+numbers = {
+    'high':   100,
+    'medium': 50,
+    'low':    10,
+}
+
+for elem in numbers.items():
+    print(f'A {elem[0]} number is {elem[1]}')
+# or
+for key, value in numbers.items():
+    print(f"A {key} number is {value}.")
