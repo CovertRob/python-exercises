@@ -216,4 +216,6 @@ for elem in numbers.items():
 # or
 for key, value in numbers.items():
     print(f"A {key} number is {value}.")
- 6649b66b5db95d770501dec518bcaab82f13f572
+
+
+
